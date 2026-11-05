@@ -33,10 +33,6 @@
             android:id="@+id/lineatLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             android:orientation="vertical"
             android:layout_marginHorizontal="25dp">
 
@@ -88,10 +84,14 @@
             </LinearLayout>
 
             <ProgressBar
+                android:id="@+id/progressBar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:indeterminateTint="@color/white"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                tools:visibility="visible"/>
 
         </LinearLayout>
     </LinearLayout>
